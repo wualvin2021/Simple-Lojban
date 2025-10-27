@@ -43,7 +43,7 @@ public class Statement {
         return sb.toString().trim();
     }
 
-    // Static helper method to create statements from a token list
+    // Helper method to create statements from a token list
     public static List<Statement> fromTokens(List<Token> tokens) {
         List<Statement> statements = new ArrayList<>();
         List<Token> current = new ArrayList<>();
@@ -66,12 +66,5 @@ public class Statement {
 
         return statements;
     }
-
-    // Optional: Print all statements (for debugging)
-    public static void printStatements(List<Statement> statements) {
-        int count = 1;
-        for (Statement s : statements) {
-            System.out.println("Statement " + count++ + ": " + s);
-        }
-    }
 }
+
